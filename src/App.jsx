@@ -15,27 +15,26 @@ function App() {
         data-testid="test-profile-card"
         className="max-w-md w-full bg-white rounded-xl shadow-2xl overflow-hidden md:max-w-2xl flex flex-col md:flex-row"
       >
-        {/* Avatar Section */}
-        <figure className="md:shrink-0 bg-indigo-500 p-6 flex justify-center">
+      
+        <figure className="md:shrink-0 bg-slate-200 p-6 flex justify-center items-center">
           <img 
             data-testid="test-user-avatar"
-            className="h-48 w-48 object-cover rounded-full border-4 border-white md:rounded-lg shadow-lg"
-            src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=300" 
-            alt="User profile avatar"
+            className="h-40 w-40 object-cover rounded-full border-4 border-white shadow-sm bg-slate-300"
+            src="https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mp&f=y&s=300" 
+            alt="Generic user placeholder avatar"
           />
         </figure>
 
         <div className="p-8">
-          {/* Header & Name */}
           <header>
             <h2 
               data-testid="test-user-name"
               className="block mt-1 text-2xl leading-tight font-bold text-black"
             >
-              John Doe
+              Test User
             </h2>
             <div className="mt-2 text-indigo-600 font-mono text-sm">
-              Current Epoch: <span data-testid="test-user-time" aria-live="polite">{time}</span>
+              Current Time: <span data-testid="test-user-time" aria-live="polite">{time}</span>
             </div>
           </header>
 
