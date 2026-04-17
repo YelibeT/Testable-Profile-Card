@@ -7,4 +7,5 @@ A responsive,accessible, and testable Profile Card component built with React an
 3. Start the server: npm run dev
 
 Implementation Notes:
+
 Dynamic Time: displaye sth eUnix Epoch in milliseconds and updates every 1000ms using a useEffect hook.
